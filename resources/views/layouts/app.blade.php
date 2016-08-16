@@ -27,6 +27,8 @@
             margin-right: 6px;
         }
     </style>
+
+    @yield('css')
 </head>
 <body id="app-layout">
     <nav class="navbar navbar-default navbar-static-top">
@@ -85,5 +87,7 @@
     <script type="text/javascript" src="{{ url('vendor/bootstrap/dist/js/bootstrap.min.js') }}"></script>
 
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+
+    @yield('script')
 </body>
 </html>
